@@ -15,7 +15,7 @@ function dateToYMDHH(date) {
   }
   window.hasRun = true;
 
-  const answers = Array.from(document.querySelector('#answers').querySelectorAll('.answer'))
+  const answers = Array.from(document.querySelectorAll('#answers .answer'))
   answers.forEach((answer) => {
     const datetime = answer.querySelector('time').getAttribute('datetime')
     const links = Array.from(answer.querySelectorAll('a'))
